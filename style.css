@@ -2,22 +2,6 @@
   body {
     background-color: hsl(0, 0%, 95%);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-  }
-  .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .left, .center, .right {
-    /* padding: 5rem 10rem; */
-    /* padding: 2rem 4rem; */
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 3rem;
-    padding-right: 6rem;
   }
   .left {
     background: hsl(31, 77%, 52%);
@@ -28,18 +12,29 @@
   .right {
     background: hsl(179, 100%, 13%);
   }
+  img {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
   h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
     text-transform: uppercase;
   }
   p {
+    margin-top: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
     font-size: 15px;
     line-height: 1.7;
-  }
-  footer {
-    margin-top: 7rem;
-    margin-bottom: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
   }
   .learn {
+    text-transform: capitalize;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
     background: white;
     padding: 0.7rem 1.5rem;
     border-radius: 20px;
@@ -47,8 +42,65 @@
 
 }
 
+/* desktop */
 @media (min-width: 376px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+  }
   .card {
     margin: 0 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left, .center, .right {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 2.8rem;
+  }
+  .left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .center p {
+    width: 95%;
+  }
+  .right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  footer {
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 1.5rem;
+  }
+  footer {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .left, .center, .right {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
+  }
+  .left {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .right {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 }
