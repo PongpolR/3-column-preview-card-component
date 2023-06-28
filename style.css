@@ -8,11 +8,47 @@
   }
   .card {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  .left, .center, .right {
+    /* padding: 5rem 10rem; */
+    /* padding: 2rem 4rem; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 6rem;
+  }
+  .left {
+    background: hsl(31, 77%, 52%);
+  }
+  .center {
+    background: hsl(184, 100%, 22%);
+  }
+  .right {
+    background: hsl(179, 100%, 13%);
+  }
+  h1 {
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  footer {
+    margin-top: 7rem;
+    margin-bottom: 1.5rem;
+  }
+  .learn {
+    background: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 20px;
+  }
+
 }
 
 @media (min-width: 376px) {
   .card {
-    margin: 0 10rem;
+    margin: 0 15rem;
   }
 }
