@@ -23,7 +23,6 @@
     text-transform: uppercase;
   }
   p {
-    margin-top: 2rem;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -38,6 +37,15 @@
     background: white;
     padding: 0.7rem 1.5rem;
     border-radius: 20px;
+  }
+  .left footer {
+    color: hsl(31, 77%, 52%);
+  }
+  .center footer {
+    color: hsl(184, 100%, 22%);
+  }
+  .right footer {
+    color: hsl(179, 100%, 13%);
   }
 
 }
@@ -76,8 +84,12 @@
     margin-top: 6rem;
     margin-bottom: 1.5rem;
   }
+  p {
+    margin-top: 2rem;
+  }
 }
 
+/* mobile */
 @media (max-width: 375px) {
   body {
     flex-direction: column;
